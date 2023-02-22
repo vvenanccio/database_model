@@ -1,0 +1,518 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -223,
+    "scrollLeft": -186.34375,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Loja",
+        "comment": "Tabela para guardar as informações das lojas da empresa Coyote",
+        "columns": [
+          {
+            "name": "id_loja",
+            "comment": "Pk da loja",
+            "dataType": "int",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "244f8f45-d4d5-4089-8e70-2937fc9d5c99"
+          },
+          {
+            "name": "nome_loja",
+            "comment": "Nome da loja ",
+            "dataType": "var",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.9853515625,
+              "widthComment": 82.208984375,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6930c726-3941-4540-b895-855481cee219"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 160,
+          "top": 88,
+          "zIndex": 73,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "9f4aa465-3901-4c82-ae71-b5ea94d2cd14"
+      },
+      {
+        "name": "Pessoa",
+        "comment": "Tabela para guardar as infomações de pessoas",
+        "columns": [
+          {
+            "name": "id_pessoa",
+            "comment": "Identificador da pessoa",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "811f38ec-e21e-4c4d-bd8a-1062cd06b12a"
+          },
+          {
+            "name": "nome_pessoa",
+            "comment": "Nome da pessoa",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 83.6689453125,
+              "widthComment": 100.28076171875,
+              "widthDataType": 64.60693359375,
+              "widthDefault": 60
+            },
+            "id": "f2299e8a-68a3-4de9-862a-7c94381abc81"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 260.4726,
+          "top": 299.8337,
+          "zIndex": 184,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "98bfbe65-a01d-4f72-9c7f-552cc561deb9"
+      },
+      {
+        "name": "Funcionario",
+        "comment": "Tabela para guardar informamações de funcionários",
+        "columns": [
+          {
+            "name": "id_pessoa",
+            "comment": "Identificador da pessoa",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.26806640625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cd3faa57-1bf0-434c-b04f-725368557b0e"
+          },
+          {
+            "name": "id_funcionario",
+            "comment": "Identificador do funcionário",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.9453125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4c47bc47-da4e-4ebf-b33d-b37cea46e483"
+          },
+          {
+            "name": "id_tipo_funcionario",
+            "comment": "Identificador do tipo de funcionario , pode ser 0 = temporario, 1 = efetivo, 2 terceiro",
+            "dataType": "INT",
+            "default": "1",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 111.13525390625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c4765d15-e945-440c-923f-fd0a0ba8c9c0"
+          },
+          {
+            "name": "data_inicio",
+            "comment": "Data que o funcionario começou na empresa",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.15625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "450409a6-2bf8-46c4-a422-156ac0afb6ff"
+          },
+          {
+            "name": "data_fim",
+            "comment": "Data que o funcionário deixou a empresa",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ece63e7e-15e5-482c-8d59-df8d6317fd2a"
+          },
+          {
+            "name": "",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "623404cb-cfc1-4227-b390-4f999df25f87"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 795.8327,
+          "top": 471.9169,
+          "zIndex": 185,
+          "widthName": 69.92626953125,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "ac92c9f3-0519-4174-a0a1-61c109838821"
+      },
+      {
+        "name": "Cargo",
+        "comment": "Tabela para armazenar as informações de cargos de funcionários da empresa ",
+        "columns": [
+          {
+            "name": "id_cargo",
+            "comment": "Identificador do cargo do funcionário",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e7a0d7f2-2715-4561-a73e-6c372326af16"
+          },
+          {
+            "name": "nome_cargo",
+            "comment": "Nome do cargo do funcionario ",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.26806640625,
+              "widthComment": 120,
+              "widthDataType": 64.60693359375,
+              "widthDefault": 60
+            },
+            "id": "a35eabdd-b1d9-4766-8fe1-6fffbacf4a29"
+          },
+          {
+            "name": "valor_salario_cargo",
+            "comment": "Valor do salário referente ao cargo do funcionário",
+            "dataType": "DOUBLE PRECISION",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 115.45166015625,
+              "widthComment": 120,
+              "widthDataType": 130.58447265625,
+              "widthDefault": 60
+            },
+            "id": "1f20aa5a-2054-4e1c-a3e9-84df8d732bbf"
+          },
+          {
+            "name": "id_funcionario",
+            "comment": "Identificador do funcionário",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 82.9453125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4f8b80e6-d627-4f2a-bc3f-80d905f0f3e9"
+          },
+          {
+            "name": "id_tipo_funcionario",
+            "comment": "Identificador do tipo de funcionario , pode ser 0 = temporario, 1 = efetivo, 2 terceiro",
+            "dataType": "INT",
+            "default": "1",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 111.13525390625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f21a07df-f26e-4754-b0b8-423f019d354b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1351.2214,
+          "top": 252.611,
+          "zIndex": 186,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "c4a2cd65-66ec-450b-831c-2ed1d216109a"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "98bfbe65-a01d-4f72-9c7f-552cc561deb9",
+          "columnIds": [
+            "811f38ec-e21e-4c4d-bd8a-1062cd06b12a"
+          ],
+          "x": 695.74847890625,
+          "y": 354.8337,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "ac92c9f3-0519-4174-a0a1-61c109838821",
+          "columnIds": [
+            "cd3faa57-1bf0-434c-b04f-725368557b0e"
+          ],
+          "x": 795.8327,
+          "y": 567.9168999999999,
+          "direction": "left"
+        },
+        "constraintName": "fk_pessoa_to_funcionario",
+        "visible": true,
+        "id": "30c10411-74d4-4d3b-bded-e473a1720766"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneOnly",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ac92c9f3-0519-4174-a0a1-61c109838821",
+          "columnIds": [
+            "4c47bc47-da4e-4ebf-b33d-b37cea46e483",
+            "c4765d15-e945-440c-923f-fd0a0ba8c9c0"
+          ],
+          "x": 1253.96795390625,
+          "y": 567.9168999999999,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c4a2cd65-66ec-450b-831c-2ed1d216109a",
+          "columnIds": [
+            "4f8b80e6-d627-4f2a-bc3f-80d905f0f3e9",
+            "f21a07df-f26e-4754-b0b8-423f019d354b"
+          ],
+          "x": 1351.2214,
+          "y": 338.361,
+          "direction": "left"
+        },
+        "constraintName": "fk_funcionario_to_cargo",
+        "visible": true,
+        "id": "9cb0670a-d926-47cc-b205-b261450e4ea8"
+      }
+    ]
+  }
+}
